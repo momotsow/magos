@@ -19,10 +19,10 @@ $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
 // Create the email and send the message
-$to = 'mathebulahappen8@gmail.com'; 
+$to = 'info@magos.co.za'; 
 $email_subject = "Website Quote Form:  $name";
-$email_body = "You have received a new message from your website Quote form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: info@letjema.co.za\n";
+$email_body = "You have received a new message from your website Quote form.\n\n"."Here are the details:\n\nFull Name: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
+$headers = "From: info@magos.co.za\n";
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
 return true;         
