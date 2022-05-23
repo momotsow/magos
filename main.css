@@ -388,6 +388,9 @@ footer {
     display: none;
   }
   @media (max-width: 600px){
+      .digital {
+          display: block;
+      }
     .wrapper header{
       text-align: center;
     }
