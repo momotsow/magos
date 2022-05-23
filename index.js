@@ -1,3 +1,8 @@
+$(window).on('load', function () {
+    $('.preloader').fadeOut();
+});
+
+
 const form = document.querySelector("form"),
 statusTxt = form.querySelector(".button-area span");
 
@@ -33,28 +38,29 @@ form.onsubmit = (e)=>{
 function readMore() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-    var less = document.getElementById("less")
+    var btnText = document.getElementById("mybtn");
+    // var less = document.getElementById("less")
 
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      less.style.display = "none";
-      //btnText.textContent = "Read more"; 
+    //   less.style.display = "none";
+      btnText.textContent = "Read more"; 
       moreText.style.display = "none";
     } else {
+        
       dots.style.display = "none";
-      less.style.display = "inline";
-      //btnText.textContent  = 'Read less'; 
+    //   less.style.display = "inline";
+      btnText.textContent  = 'Read less'; 
       moreText.style.display = "inline";
     }
   }
 
-  function readLess() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-    moreText.style.display = "none";
-    less.style.display = "none";
+//   function readLess() {
+//     var dots = document.getElementById("dots");
+//     var moreText = document.getElementById("more");
+//     var btnText = document.getElementById("myBtn");
+//     moreText.style.display = "none";
+//     less.style.display = "none";
     
-  }
+//   }
