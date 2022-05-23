@@ -157,7 +157,7 @@ nav {
     background-color: #1C4DA1;
     color: #fff;
     width: 100%;
-    height: 100px;
+    height: 200px;
     padding-left: 0 !important;
 }
 
@@ -189,9 +189,21 @@ section {
     justify-content: space-evenly;
 }
 
-/* .card {
-    margin-right: 10px;
-} */
+.btn-primary{
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #CF2C91;
+}
+.card1 {
+    border: 1px solid #1C4DA1;
+}
+.card2 {
+    border: 1px solid #CF2C91;
+}
+.card3 {
+    border: 1px solid #F6BB30;
+}
 #more {
     display: none;
 }
